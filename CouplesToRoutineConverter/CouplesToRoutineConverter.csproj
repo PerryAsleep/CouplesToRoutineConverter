@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StepManiaLibrary\Fumen\Fumen\Fumen.csproj" />
+    <ProjectReference Include="..\StepManiaLibrary\StepManiaLibrary\StepManiaLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
