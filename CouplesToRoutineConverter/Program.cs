@@ -17,6 +17,7 @@ namespace CouplesToRoutineConverter
 			@"C:\Games\StepMania 5\Songs\Only One Couples Pack 2",
 			@"C:\Games\StepMania 5\Songs\Only One Couples Pack 3",
 			@"C:\Games\StepMania 5\Songs\Only One Couples Pack 4",
+			@"C:\Games\StepMania 5\Songs\Only One Couples Pack 5",
 		];
 
 		private const string DestinationFolder = @"C:\Games\StepMania 5\Songs\Only One Couples Pack 2025";
@@ -29,6 +30,8 @@ namespace CouplesToRoutineConverter
 
 		private static readonly Dictionary<string, string> Assets = new()
 		{
+			// ReSharper disable StringLiteralTypo
+
 			// Pack 1
 			{ "Bangarang", Assets0101 },
 			{ "Bubble Pop", Assets0102 },
@@ -108,6 +111,15 @@ namespace CouplesToRoutineConverter
 			{ "Sad Machine", Assets0401 },
 			{ "Sugar Free", Assets0401 },
 			{ "UN Owen Was Her", Assets0401 },
+
+			// Pack 5
+			{ "EDM Jumpers", Assets0401 },
+			{ "Hype", Assets0401 },
+			{ "Karate", Assets0401 },
+			{ "M1917", Assets0401 },
+			{ "Starlight Dancehall", Assets0401 },
+
+			// ReSharper enable StringLiteralTypo
 		};
 
 		public async Task Main()
@@ -157,7 +169,6 @@ namespace CouplesToRoutineConverter
 					{
 						Logger.Warn($"No asset mapping defined for \"{songFolderName}\". Using {assets}.");
 					}
-
 
 					DirectoryInfo newSongDir;
 					string[] songFiles;
